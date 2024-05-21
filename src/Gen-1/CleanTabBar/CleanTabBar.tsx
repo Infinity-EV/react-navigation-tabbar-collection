@@ -128,7 +128,7 @@ const CleanTabBar = ({
           const onFocusedAnimation = () => {
             Animated.timing(focusAnimation, {
               toValue: 1,
-              duration: 700,
+              duration: 300,
               useNativeDriver: true,
               easing: Easing.bezier(0.33, 1, 0.68, 1),
             }).start();
@@ -137,7 +137,7 @@ const CleanTabBar = ({
           const notFocusedAnimation = () => {
             Animated.timing(focusAnimation, {
               toValue: 0,
-              duration: 700,
+              duration: 300,
               useNativeDriver: true,
               easing: Easing.bezier(0.33, 1, 0.68, 1),
             }).start();
